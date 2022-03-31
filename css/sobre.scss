@@ -1,0 +1,38 @@
+.sectionSobre{
+    height: 100%;
+    left: 30%;
+    padding: 16px 4%;
+    position: absolute;
+
+    .container{
+        top: 50%;
+        position: relative;
+        transform: translateY(-60%);
+
+        .content span{
+            color: dimgray;
+        }
+    
+        .info{
+            margin-top: 16px;
+    
+            a{
+                text-decoration: none;
+            }
+    
+            img{
+                width: 100%;
+                height: 100%;
+                max-width: 24px;
+                max-height: 24px;
+            }
+        }
+    }
+}
+
+/**Mobile**/
+@media (max-width: 768px){
+    .sectionSobre{
+        left: 40%;
+    }
+}

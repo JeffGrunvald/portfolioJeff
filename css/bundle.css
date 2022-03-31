@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', Sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+.sectionGeral {
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  position: fixed;
+  background-color: dimgray;
+}
+
+.sectionGeral .container {
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.sectionGeral .container .foto img {
+  width: calc(70% + 32px);
+  border-radius: 50%;
+  border: 7px solid whitesmoke;
+}
+
+.sectionGeral .container .menu {
+  padding: 16px 4%;
+  text-align: center;
+  letter-spacing: 1.5px;
+  word-spacing: 1.5px;
+}
+
+.sectionGeral .container .menu li {
+  list-style-type: none;
+}
+
+.sectionGeral .container .menu li a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+/**Mobile**/
+@media (max-width: 768px) {
+  .sectionGeral {
+    width: 40%;
+  }
+}
+
+.sectionSobre {
+  height: 100%;
+  left: 30%;
+  padding: 16px 4%;
+  position: absolute;
+}
+
+.sectionSobre .container {
+  top: 50%;
+  position: relative;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
+}
+
+.sectionSobre .container .content span {
+  color: dimgray;
+}
+
+.sectionSobre .container .info {
+  margin-top: 16px;
+}
+
+.sectionSobre .container .info a {
+  text-decoration: none;
+}
+
+.sectionSobre .container .info img {
+  width: 100%;
+  height: 100%;
+  max-width: 24px;
+  max-height: 24px;
+}
+
+/**Mobile**/
+@media (max-width: 768px) {
+  .sectionSobre {
+    left: 40%;
+  }
+}
+
+.sectionSkills {
+  height: 100%;
+  left: 30%;
+  padding: 16px 4%;
+  position: absolute;
+}
+
+.sectionSkills .container {
+  top: 50%;
+  position: relative;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
+}
+
+.sectionSkills .container .content li {
+  list-style-type: none;
+  padding: 10px 2%;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.sectionSkills .container .content li:hover {
+  font-weight: bold;
+}
+
+.sectionSkills .container .content li:after {
+  width: 0;
+  height: 4px;
+  content: "";
+  position: absolute;
+  background-color: limegreen;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.sectionSkills .container .content li:hover:after {
+  width: 100%;
+}
+
+/**Mobile**/
+@media (max-width: 768px) {
+  .sectionSkills {
+    left: 40%;
+  }
+}
+/*# sourceMappingURL=bundle.css.map */

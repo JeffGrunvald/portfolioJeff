@@ -1,0 +1,49 @@
+.sectionSkills{
+    height: 100%;
+    left: 30%;
+    padding: 16px 4%;
+    position: absolute;
+
+    .container{
+        top: 50%;
+        position: relative;
+        transform: translateY(-60%);
+
+        .content{
+            
+            li{
+                list-style-type: none;
+                padding: 10px 2%;
+                position: relative;
+                letter-spacing: 1px;
+                // cursor: pointer;                
+            }
+
+            li:hover{
+                font-weight: bold;
+            }
+
+            li:after{
+                width: 0;
+                height: 4px;
+                content: "";
+                position: absolute;
+                background-color: limegreen;
+                left: 0;
+                bottom: 0;
+                transition: 0.4s;
+            }
+
+            li:hover:after{
+                width: 100%;
+            }
+        }
+    }
+}
+
+/**Mobile**/
+@media (max-width: 768px){
+    .sectionSkills{
+        left: 40%;
+    }
+}
