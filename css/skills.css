@@ -13,14 +13,15 @@
 }
 
 .sectionSkills .container .content li {
-  list-style-type: none;
-  padding: 10px 2%;
+  padding-bottom: 16px;
   position: relative;
+  list-style-type: none;
   letter-spacing: 1px;
 }
 
 .sectionSkills .container .content li:hover {
   font-weight: bold;
+  font-size: 26px;
 }
 
 .sectionSkills .container .content li:after {
@@ -30,7 +31,7 @@
   position: absolute;
   background-color: limegreen;
   left: 0;
-  bottom: 0;
+  bottom: 16px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
