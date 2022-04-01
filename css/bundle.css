@@ -33,21 +33,22 @@ html, body {
 
 .sectionGeral .container .menu {
   padding: 16px 4%;
-  text-align: center;
-  letter-spacing: 1.5px;
-  word-spacing: 1.5px;
 }
 
 .sectionGeral .container .menu li {
   margin-bottom: 10px;
   position: relative;
   list-style-type: none;
-  letter-spacing: 1px;
+  letter-spacing: 2.4px;
 }
 
 .sectionGeral .container .menu li a {
   color: whitesmoke;
   text-decoration: none;
+}
+
+.sectionGeral .container .menu li a img {
+  margin-right: 4px;
 }
 
 .sectionGeral .container .menu li a:hover {
@@ -72,14 +73,55 @@ html, body {
 }
 
 .sectionGeral .container .menu li:hover:after {
-  left: 50px;
-  width: 46%;
+  left: 38px;
+  width: 52%;
+}
+
+.footerGeral {
+  width: 100%;
+  right: 16px;
+  bottom: 16px;
+  position: fixed;
+}
+
+.footerGeral .container .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footerGeral .container .info a {
+  padding: 4px;
+}
+
+.footerGeral .container .info a img {
+  width: 24px;
+  height: 24px;
 }
 
 /**Mobile**/
 @media (max-width: 768px) {
   .sectionGeral {
     width: 40%;
+  }
+  .sectionGeral .container .menu li:hover:after {
+    left: 32px;
+    width: 56%;
+  }
+}
+
+/**Mobile**/
+@media (max-width: 620px) {
+  .sectionGeral .container .menu li:hover:after {
+    left: 24px;
+    width: 60%;
   }
 }
 
@@ -99,21 +141,6 @@ html, body {
 
 .sectionSobre .container .content span {
   color: dimgray;
-}
-
-.sectionSobre .container .info {
-  margin-top: 16px;
-}
-
-.sectionSobre .container .info a {
-  text-decoration: none;
-}
-
-.sectionSobre .container .info img {
-  width: 100%;
-  height: 100%;
-  max-width: 24px;
-  max-height: 24px;
 }
 
 /**Mobile**/

@@ -16,21 +16,6 @@
   color: dimgray;
 }
 
-.sectionSobre .container .info {
-  margin-top: 16px;
-}
-
-.sectionSobre .container .info a {
-  text-decoration: none;
-}
-
-.sectionSobre .container .info img {
-  width: 100%;
-  height: 100%;
-  max-width: 24px;
-  max-height: 24px;
-}
-
 /**Mobile**/
 @media (max-width: 768px) {
   .sectionSobre {

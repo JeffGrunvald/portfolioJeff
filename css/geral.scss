@@ -28,21 +28,22 @@ html, body{
         }
 
         .menu{
-            padding: 16px 4%;
-            text-align: center;
-            letter-spacing: 1.5px;
-            word-spacing: 1.5px;
+            padding: 16px 4%; 
 
             li{
                 margin-bottom: 10px;
                 position: relative;
                 list-style-type: none;
-                letter-spacing: 1px;
+                letter-spacing: 2.4px;
                 // cursor: pointer;
                 
                 a{
                     color: whitesmoke;
                     text-decoration: none;
+
+                    img{
+                        margin-right: 4px;
+                    }
                 }
 
                 a:hover{
@@ -67,8 +68,31 @@ html, body{
             }
 
             li:hover:after{
-                left: 50px;
-                width: 46%;
+                left: 38px;
+                width: 52%;
+            }
+        }
+    }
+}
+
+.footerGeral{
+    width: 100%;
+    right: 16px;
+    bottom: 16px;
+    position: fixed;
+
+    .container .info{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+
+        a{
+            padding: 4px;
+    
+            img{
+
+                width: 24px;
+                height: 24px;
             }
         }
     }
@@ -78,5 +102,18 @@ html, body{
 @media (max-width: 768px){
     .sectionGeral{
         width: 40%;
+
+        .container .menu li:hover:after{
+            left: 32px;
+            width: 56%;
+        }
+    }
+}
+
+/**Mobile**/
+@media (max-width: 620px){
+    .sectionGeral .container .menu li:hover:after{
+            left: 24px;
+            width: 60%;
     }
 }
