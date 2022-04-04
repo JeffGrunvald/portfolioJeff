@@ -1,50 +1,67 @@
-.sectionSkills{
-    height: 100%;
+.sectionSkills {
+    width: 70vw;
+    height: 100vh;
     left: 30%;
-    padding: 16px 4%;
-    position: absolute;
+    padding: 10px 4%;
+    position: relative;
 
-    .container{
+    .container {
         top: 50%;
-        position: relative;
+        position: absolute;
         transform: translateY(-60%);
 
-        .content{
+        .content {
+            font-size: 24px;
             
-            li{
+            li {
+                width: fit-content; 
                 padding-bottom: 16px;
                 position: relative;
                 list-style-type: none;
                 letter-spacing: 1px;
-                // cursor: pointer;                
+                // cursor: pointer;   
             }
 
-            li:hover{
+            li:hover {
                 font-weight: bold;
-                font-size: 26px;
+                font-size: 32px;
             }
 
-            li:after{
+            li:before {
                 width: 0;
                 height: 4px;
+                right: 0;
+                bottom: 12px;
                 content: "";
                 position: absolute;
                 background-color: limegreen;
-                left: 0;
-                bottom: 16px;
-                transition: 0.4s;
-            }
-
-            li:hover:after{
-                width: 100%;
+                transition: 0.6s;
+                transition-delay: 0s;
             }
         }
     }
 }
 
 /**Mobile**/
-@media (max-width: 768px){
-    .sectionSkills{
+@media (max-width: 768px) {
+    .sectionSkills {
+        width: 60vw;
         left: 40%;
+
+        .container .content li {
+            font-size: 16px;
+
+            li:hover {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media (hover) {
+    .sectionSkills .container .content li:hover:before {
+        width: 100%;
+        left: 0;
+        right: 0;        
     }
 }

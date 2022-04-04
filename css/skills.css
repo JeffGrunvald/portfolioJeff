@@ -1,18 +1,26 @@
 .sectionSkills {
-  height: 100%;
+  width: 70vw;
+  height: 100vh;
   left: 30%;
-  padding: 16px 4%;
-  position: absolute;
+  padding: 10px 4%;
+  position: relative;
 }
 
 .sectionSkills .container {
   top: 50%;
-  position: relative;
+  position: absolute;
   -webkit-transform: translateY(-60%);
           transform: translateY(-60%);
 }
 
+.sectionSkills .container .content {
+  font-size: 24px;
+}
+
 .sectionSkills .container .content li {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding-bottom: 16px;
   position: relative;
   list-style-type: none;
@@ -21,29 +29,42 @@
 
 .sectionSkills .container .content li:hover {
   font-weight: bold;
-  font-size: 26px;
+  font-size: 32px;
 }
 
-.sectionSkills .container .content li:after {
+.sectionSkills .container .content li:before {
   width: 0;
   height: 4px;
+  right: 0;
+  bottom: 12px;
   content: "";
   position: absolute;
   background-color: limegreen;
-  left: 0;
-  bottom: 16px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.sectionSkills .container .content li:hover:after {
-  width: 100%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
 }
 
 /**Mobile**/
 @media (max-width: 768px) {
   .sectionSkills {
+    width: 60vw;
     left: 40%;
+  }
+  .sectionSkills .container .content li {
+    font-size: 16px;
+  }
+  .sectionSkills .container .content li li:hover {
+    font-size: 24px;
+  }
+}
+
+@media (hover) {
+  .sectionSkills .container .content li:hover:before {
+    width: 100%;
+    left: 0;
+    right: 0;
   }
 }
 /*# sourceMappingURL=skills.css.map */

@@ -1,23 +1,25 @@
-.sectionSobre{
-    height: 100%;
+.sectionSobre {
+    width: 70vw;
+    height: 100vh;
     left: 30%;
-    padding: 16px 4%;
-    position: absolute;
+    padding: 10px 4%;
+    position: relative;
 
-    .container{
+    .container {
         top: 50%;
-        position: relative;
+        position: absolute;
         transform: translateY(-60%);
 
-        .content span{
+        .content span {
             color: dimgray;
         }
     }
 }
 
 /**Mobile**/
-@media (max-width: 768px){
-    .sectionSobre{
+@media (max-width: 768px) {
+    .sectionSobre {
+        width: 60vw;
         left: 40%;
     }
 }

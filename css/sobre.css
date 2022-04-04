@@ -1,13 +1,14 @@
 .sectionSobre {
-  height: 100%;
+  width: 70vw;
+  height: 100vh;
   left: 30%;
-  padding: 16px 4%;
-  position: absolute;
+  padding: 10px 4%;
+  position: relative;
 }
 
 .sectionSobre .container {
   top: 50%;
-  position: relative;
+  position: absolute;
   -webkit-transform: translateY(-60%);
           transform: translateY(-60%);
 }
@@ -19,6 +20,7 @@
 /**Mobile**/
 @media (max-width: 768px) {
   .sectionSobre {
+    width: 60vw;
     left: 40%;
   }
 }
