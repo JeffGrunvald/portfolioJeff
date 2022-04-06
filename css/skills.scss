@@ -1,17 +1,22 @@
 .sectionSkills {
-    width: 70vw;
-    height: 100vh;
-    left: 30%;
+    width: 74vw;
+    // height: 100vh;
+    height: 90%;
+    left: 26%;
     padding: 10px 4%;
     position: relative;
 
     .container {
+        padding: 10px 4%;
         top: 50%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
         position: absolute;
-        transform: translateY(-60%);
+        transform: translateY(-50%);
 
         .content {
-            font-size: 24px;
+            font-size: 26px;
             
             li {
                 width: fit-content; 
@@ -49,10 +54,10 @@
         left: 40%;
 
         .container .content li {
-            font-size: 16px;
+            font-size: 20px;
 
             li:hover {
-                font-size: 24px;
+                font-size: 28px;
             }
         }
     }

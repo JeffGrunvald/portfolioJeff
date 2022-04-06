@@ -10,7 +10,7 @@ html, body {
 }
 
 .sectionGeral {
-    width: 30vw;
+    width: 26vw;
     height: 100vh;
     text-align: center;
     position: fixed;
@@ -22,7 +22,7 @@ html, body {
         transform: translateY(-50%);
 
         .foto img {
-            width: calc(30vw - 14%);
+            width: calc(26vw - 14%);
             border-radius: 50%;
             border: 7px solid whitesmoke;
         }
@@ -74,25 +74,11 @@ html, body {
     }
 }
 
-.footerGeral {
-    width: 100%;
-    right: 16px;
-    bottom: 16px;
-    position: fixed;
-
-    .container .info {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-end;
-
-        a {
-            padding: 4px;
-    
-            img {
-                width: 24px;
-                height: 24px;
-            }
-        }
+@media (hover) {
+    .sectionGeral .container .menu li:hover:before {
+        width: 100%;
+        left: 0;
+        right: 0;
     }
 }
 
@@ -104,13 +90,5 @@ html, body {
         .container .foto img {
             width: calc(40vw - 14%);
         }
-    }
-}
-
-@media (hover) {
-    .sectionGeral .container .menu li:hover:before {
-        width: 100%;
-        left: 0;
-        right: 0;
     }
 }

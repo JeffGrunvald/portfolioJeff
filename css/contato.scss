@@ -1,4 +1,4 @@
-.sectionSobre {
+.sectionContato {
     width: 74vw;
     // height: 100vh;
     height: 90%;
@@ -17,7 +17,7 @@
 
         .content {
             font-size: 26px;
-        
+
             span {
                 color: dimgray;
             }
@@ -25,14 +25,31 @@
     }
 }
 
+#contato-res {
+    right: 10%;
+    bottom: 30%;
+    position: absolute;
+    transform: scale(2.4);
+}
+
+.clear {
+    clear: both;
+}
+
 /**Mobile**/
 @media (max-width: 768px) {
-    .sectionSobre {
+    .sectionContato {
         width: 60vw;
         left: 40%;
 
         .container .content {
             font-size: 20px;
         }
+    }
+
+    #contato-res {
+        right: 7%;
+        bottom: 30%;
+        transform: scale(1.4);
     }
 }

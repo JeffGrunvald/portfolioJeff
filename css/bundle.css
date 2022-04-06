@@ -11,7 +11,7 @@ html, body {
 }
 
 .sectionGeral {
-  width: 30vw;
+  width: 26vw;
   height: 100vh;
   text-align: center;
   position: fixed;
@@ -26,7 +26,7 @@ html, body {
 }
 
 .sectionGeral .container .foto img {
-  width: calc(30vw - 14%);
+  width: calc(26vw - 14%);
   border-radius: 50%;
   border: 7px solid whitesmoke;
 }
@@ -79,33 +79,12 @@ html, body {
           transition-delay: 0s;
 }
 
-.footerGeral {
-  width: 100%;
-  right: 16px;
-  bottom: 16px;
-  position: fixed;
-}
-
-.footerGeral .container .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.footerGeral .container .info a {
-  padding: 4px;
-}
-
-.footerGeral .container .info a img {
-  width: 24px;
-  height: 24px;
+@media (hover) {
+  .sectionGeral .container .menu li:hover:before {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
 }
 
 /**Mobile**/
@@ -118,27 +97,33 @@ html, body {
   }
 }
 
-@media (hover) {
-  .sectionGeral .container .menu li:hover:before {
-    width: 100%;
-    left: 0;
-    right: 0;
-  }
-}
-
 .sectionSobre {
-  width: 70vw;
-  height: 100vh;
-  left: 30%;
+  width: 74vw;
+  height: 90%;
+  left: 26%;
   padding: 10px 4%;
   position: relative;
 }
 
 .sectionSobre .container {
+  padding: 10px 4%;
   top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   position: absolute;
   -webkit-transform: translateY(-60%);
           transform: translateY(-60%);
+}
+
+.sectionSobre .container .content {
+  font-size: 26px;
 }
 
 .sectionSobre .container .content span {
@@ -151,25 +136,38 @@ html, body {
     width: 60vw;
     left: 40%;
   }
+  .sectionSobre .container .content {
+    font-size: 20px;
+  }
 }
 
 .sectionSkills {
-  width: 70vw;
-  height: 100vh;
-  left: 30%;
+  width: 74vw;
+  height: 90%;
+  left: 26%;
   padding: 10px 4%;
   position: relative;
 }
 
 .sectionSkills .container {
+  padding: 10px 4%;
   top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   position: absolute;
-  -webkit-transform: translateY(-60%);
-          transform: translateY(-60%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .sectionSkills .container .content {
-  font-size: 24px;
+  font-size: 26px;
 }
 
 .sectionSkills .container .content li {
@@ -208,10 +206,10 @@ html, body {
     left: 40%;
   }
   .sectionSkills .container .content li {
-    font-size: 16px;
+    font-size: 20px;
   }
   .sectionSkills .container .content li li:hover {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 
@@ -220,6 +218,68 @@ html, body {
     width: 100%;
     left: 0;
     right: 0;
+  }
+}
+
+.sectionContato {
+  width: 74vw;
+  height: 90%;
+  left: 26%;
+  padding: 10px 4%;
+  position: relative;
+}
+
+.sectionContato .container {
+  padding: 10px 4%;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
+}
+
+.sectionContato .container .content {
+  font-size: 26px;
+}
+
+.sectionContato .container .content span {
+  color: dimgray;
+}
+
+#contato-res {
+  right: 10%;
+  bottom: 30%;
+  position: absolute;
+  -webkit-transform: scale(2.4);
+          transform: scale(2.4);
+}
+
+.clear {
+  clear: both;
+}
+
+/**Mobile**/
+@media (max-width: 768px) {
+  .sectionContato {
+    width: 60vw;
+    left: 40%;
+  }
+  .sectionContato .container .content {
+    font-size: 20px;
+  }
+  #contato-res {
+    right: 7%;
+    bottom: 30%;
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
   }
 }
 /*# sourceMappingURL=bundle.css.map */

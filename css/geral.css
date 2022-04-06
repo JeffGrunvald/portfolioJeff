@@ -11,7 +11,7 @@ html, body {
 }
 
 .sectionGeral {
-  width: 30vw;
+  width: 26vw;
   height: 100vh;
   text-align: center;
   position: fixed;
@@ -26,7 +26,7 @@ html, body {
 }
 
 .sectionGeral .container .foto img {
-  width: calc(30vw - 14%);
+  width: calc(26vw - 14%);
   border-radius: 50%;
   border: 7px solid whitesmoke;
 }
@@ -79,33 +79,12 @@ html, body {
           transition-delay: 0s;
 }
 
-.footerGeral {
-  width: 100%;
-  right: 16px;
-  bottom: 16px;
-  position: fixed;
-}
-
-.footerGeral .container .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.footerGeral .container .info a {
-  padding: 4px;
-}
-
-.footerGeral .container .info a img {
-  width: 24px;
-  height: 24px;
+@media (hover) {
+  .sectionGeral .container .menu li:hover:before {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
 }
 
 /**Mobile**/
@@ -115,14 +94,6 @@ html, body {
   }
   .sectionGeral .container .foto img {
     width: calc(40vw - 14%);
-  }
-}
-
-@media (hover) {
-  .sectionGeral .container .menu li:hover:before {
-    width: 100%;
-    left: 0;
-    right: 0;
   }
 }
 /*# sourceMappingURL=geral.css.map */

@@ -1,20 +1,30 @@
 .sectionSkills {
-  width: 70vw;
-  height: 100vh;
-  left: 30%;
+  width: 74vw;
+  height: 90%;
+  left: 26%;
   padding: 10px 4%;
   position: relative;
 }
 
 .sectionSkills .container {
+  padding: 10px 4%;
   top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   position: absolute;
-  -webkit-transform: translateY(-60%);
-          transform: translateY(-60%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .sectionSkills .container .content {
-  font-size: 24px;
+  font-size: 26px;
 }
 
 .sectionSkills .container .content li {
@@ -53,10 +63,10 @@
     left: 40%;
   }
   .sectionSkills .container .content li {
-    font-size: 16px;
+    font-size: 20px;
   }
   .sectionSkills .container .content li li:hover {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 

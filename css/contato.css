@@ -1,4 +1,4 @@
-.sectionSobre {
+.sectionContato {
   width: 74vw;
   height: 90%;
   left: 26%;
@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.sectionSobre .container {
+.sectionContato .container {
   padding: 10px 4%;
   top: 50%;
   display: -webkit-box;
@@ -23,22 +23,40 @@
           transform: translateY(-60%);
 }
 
-.sectionSobre .container .content {
+.sectionContato .container .content {
   font-size: 26px;
 }
 
-.sectionSobre .container .content span {
+.sectionContato .container .content span {
   color: dimgray;
+}
+
+#contato-res {
+  right: 10%;
+  bottom: 30%;
+  position: absolute;
+  -webkit-transform: scale(2.4);
+          transform: scale(2.4);
+}
+
+.clear {
+  clear: both;
 }
 
 /**Mobile**/
 @media (max-width: 768px) {
-  .sectionSobre {
+  .sectionContato {
     width: 60vw;
     left: 40%;
   }
-  .sectionSobre .container .content {
+  .sectionContato .container .content {
     font-size: 20px;
   }
+  #contato-res {
+    right: 7%;
+    bottom: 30%;
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
 }
-/*# sourceMappingURL=sobre.css.map */
+/*# sourceMappingURL=contato.css.map */
