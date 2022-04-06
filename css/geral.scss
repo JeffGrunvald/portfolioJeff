@@ -10,8 +10,10 @@ html, body {
 }
 
 .sectionGeral {
-    width: 26vw;
-    height: 100vh;
+    // width: 26vw;
+    // height: 100vh;
+    width: 26%;
+    height: 100%;
     text-align: center;
     position: fixed;
     background-color: dimgray;
@@ -28,13 +30,13 @@ html, body {
         }
 
         .menu {
-            left: 30%;
+            left: 24%;
             padding: 10px 2%;
             position: relative;
             
             li {
                 width: fit-content;
-                margin-bottom: 10px;
+                margin-bottom: 14px;
                 position: relative;
                 list-style-type: none;
                 letter-spacing: 2.4px;
@@ -85,7 +87,8 @@ html, body {
 /**Mobile**/
 @media (max-width: 768px) {
     .sectionGeral {
-        width: 40vw;
+        // width: 40vw;
+        width: 40%;
 
         .container .foto img {
             width: calc(40vw - 14%);

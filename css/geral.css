@@ -11,8 +11,8 @@ html, body {
 }
 
 .sectionGeral {
-  width: 26vw;
-  height: 100vh;
+  width: 26%;
+  height: 100%;
   text-align: center;
   position: fixed;
   background-color: dimgray;
@@ -32,7 +32,7 @@ html, body {
 }
 
 .sectionGeral .container .menu {
-  left: 30%;
+  left: 24%;
   padding: 10px 2%;
   position: relative;
 }
@@ -41,7 +41,7 @@ html, body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   position: relative;
   list-style-type: none;
   letter-spacing: 2.4px;
@@ -90,7 +90,7 @@ html, body {
 /**Mobile**/
 @media (max-width: 768px) {
   .sectionGeral {
-    width: 40vw;
+    width: 40%;
   }
   .sectionGeral .container .foto img {
     width: calc(40vw - 14%);
