@@ -31,6 +31,7 @@ html, body {
             left: 16%;
             padding: 10px 2%;
             position: relative;
+            font-size: 20px;
             
             li {
                 width: fit-content;
@@ -56,7 +57,7 @@ html, body {
 
             li:hover {
                 font-weight: bold;
-                font-size: 24px;
+                font-size: 26px;
             }
 
             li:before {

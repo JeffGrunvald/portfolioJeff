@@ -19,8 +19,8 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: absolute;
-  -webkit-transform: translateY(-60%);
-          transform: translateY(-60%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .sectionContato .container .content {
@@ -38,7 +38,7 @@
 
 @-webkit-keyframes info {
   50% {
-    right: 10%;
+    left: 38%;
     bottom: 30%;
     position: absolute;
     -webkit-transform: scale(2);
@@ -48,7 +48,7 @@
 
 @keyframes info {
   50% {
-    right: 10%;
+    left: 38%;
     bottom: 30%;
     position: absolute;
     -webkit-transform: scale(2);
@@ -67,7 +67,7 @@
   }
   @-webkit-keyframes info {
     50% {
-      right: 4%;
+      left: 50%;
       bottom: 30%;
       position: absolute;
       -webkit-transform: scale(1.2);
@@ -76,7 +76,7 @@
   }
   @keyframes info {
     50% {
-      right: 4%;
+      left: 50%;
       bottom: 30%;
       position: absolute;
       -webkit-transform: scale(1.2);
