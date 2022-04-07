@@ -255,15 +255,28 @@ html, body {
 }
 
 #contato-res {
-  right: 10%;
-  bottom: 30%;
-  position: absolute;
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-animation: info 4s linear 0.1s 1 normal none;
+          animation: info 4s linear 0.1s 1 normal none;
 }
 
-.clear {
-  clear: both;
+@-webkit-keyframes info {
+  50% {
+    right: 10%;
+    bottom: 30%;
+    position: absolute;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+}
+
+@keyframes info {
+  50% {
+    right: 10%;
+    bottom: 30%;
+    position: absolute;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
 }
 
 /**Mobile**/
@@ -275,11 +288,23 @@ html, body {
   .sectionContato .container .content {
     font-size: 20px;
   }
-  #contato-res {
-    right: 4%;
-    bottom: 30%;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+  @-webkit-keyframes info {
+    50% {
+      right: 4%;
+      bottom: 30%;
+      position: absolute;
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+    }
+  }
+  @keyframes info {
+    50% {
+      right: 4%;
+      bottom: 30%;
+      position: absolute;
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+    }
   }
 }
 /*# sourceMappingURL=bundle.css.map */
