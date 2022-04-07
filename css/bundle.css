@@ -21,18 +21,18 @@ html, body {
 .sectionGeral .container {
   top: 50%;
   position: absolute;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-56%);
+          transform: translateY(-56%);
 }
 
 .sectionGeral .container .foto img {
-  width: calc(26vw - 14%);
+  width: calc(90% - 24px);
   border-radius: 50%;
   border: 7px solid whitesmoke;
 }
 
 .sectionGeral .container .menu {
-  left: 24%;
+  left: 16%;
   padding: 10px 2%;
   position: relative;
 }
@@ -93,12 +93,12 @@ html, body {
     width: 40%;
   }
   .sectionGeral .container .foto img {
-    width: calc(40vw - 14%);
+    width: calc(96% - 24px);
   }
 }
 
 .sectionSobre {
-  width: 74vw;
+  width: 74%;
   height: 90%;
   left: 26%;
   padding: 10px 4%;
@@ -133,7 +133,7 @@ html, body {
 /**Mobile**/
 @media (max-width: 768px) {
   .sectionSobre {
-    width: 60vw;
+    width: 60%;
     left: 40%;
   }
   .sectionSobre .container .content {
@@ -142,7 +142,7 @@ html, body {
 }
 
 .sectionSkills {
-  width: 74vw;
+  width: 74%;
   height: 90%;
   left: 26%;
   padding: 10px 4%;
@@ -202,7 +202,7 @@ html, body {
 /**Mobile**/
 @media (max-width: 768px) {
   .sectionSkills {
-    width: 60vw;
+    width: 60%;
     left: 40%;
   }
   .sectionSkills .container .content li {
@@ -222,7 +222,7 @@ html, body {
 }
 
 .sectionContato {
-  width: 74vw;
+  width: 74%;
   height: 90%;
   left: 26%;
   padding: 10px 4%;
@@ -282,7 +282,7 @@ html, body {
 /**Mobile**/
 @media (max-width: 768px) {
   .sectionContato {
-    width: 60vw;
+    width: 60%;
     left: 40%;
   }
   .sectionContato .container .content {

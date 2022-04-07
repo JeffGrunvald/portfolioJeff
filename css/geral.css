@@ -21,18 +21,18 @@ html, body {
 .sectionGeral .container {
   top: 50%;
   position: absolute;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-56%);
+          transform: translateY(-56%);
 }
 
 .sectionGeral .container .foto img {
-  width: calc(26vw - 14%);
+  width: calc(90% - 24px);
   border-radius: 50%;
   border: 7px solid whitesmoke;
 }
 
 .sectionGeral .container .menu {
-  left: 24%;
+  left: 16%;
   padding: 10px 2%;
   position: relative;
 }
@@ -93,7 +93,7 @@ html, body {
     width: 40%;
   }
   .sectionGeral .container .foto img {
-    width: calc(40vw - 14%);
+    width: calc(96% - 24px);
   }
 }
 /*# sourceMappingURL=geral.css.map */

@@ -1,6 +1,5 @@
 .sectionContato {
-    width: 74vw;
-    // height: 100vh;
+    width: 74%;
     height: 90%;
     left: 26%;
     padding: 10px 4%;
@@ -26,10 +25,6 @@
 }
 
 #contato-res {
-    // right: 10%;
-    // bottom: 30%;
-    // position: absolute;
-    // transform: scale(2);
     animation: info 4s linear 0.1s 1 normal none;
 
     @keyframes info {
@@ -40,7 +35,7 @@
 /**Mobile**/
 @media (max-width: 768px) {
     .sectionContato {
-        width: 60vw;
+        width: 60%;
         left: 40%;
 
         .container .content {
@@ -49,9 +44,7 @@
     }
 
     #contato-res {
-        // right: 4%;
-        // transform: scale(1.2);
-
+    
         @keyframes info {
             50%  {right:4%; bottom: 30%; position: absolute; transform: scale(1.2);}
         }

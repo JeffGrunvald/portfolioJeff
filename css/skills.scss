@@ -1,6 +1,5 @@
 .sectionSkills {
-    width: 74vw;
-    // height: 100vh;
+    width: 74%;
     height: 90%;
     left: 26%;
     padding: 10px 4%;
@@ -50,7 +49,7 @@
 /**Mobile**/
 @media (max-width: 768px) {
     .sectionSkills {
-        width: 60vw;
+        width: 60%;
         left: 40%;
 
         .container .content li {

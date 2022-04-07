@@ -1,5 +1,5 @@
 .sectionContato {
-  width: 74vw;
+  width: 74%;
   height: 90%;
   left: 26%;
   padding: 10px 4%;
@@ -59,7 +59,7 @@
 /**Mobile**/
 @media (max-width: 768px) {
   .sectionContato {
-    width: 60vw;
+    width: 60%;
     left: 40%;
   }
   .sectionContato .container .content {
